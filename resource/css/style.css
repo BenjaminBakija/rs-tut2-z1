@@ -1,0 +1,11 @@
+#labalaPrezime {
+  -fx-background-color: red;
+}
+
+.crvenaklasa {
+    -fx-background-color: lightblue;
+}
+
+Button {
+    -fx-background-color: greenyellow;
+}

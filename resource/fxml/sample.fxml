@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ba.unsa.etf.rs.tutorijal2.Controller">
+<BorderPane styleClass="crvenaklasa" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rs.tutorijal2.Controller">
+   <stylesheets>
+      <URL value="@/css/style.css" />
+   </stylesheets>
    <center>
       <GridPane alignment="center" hgap="10" vgap="10">
          <children>
@@ -17,11 +19,11 @@
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding></Label>
-            <Label text="Prezime" textAlignment="CENTER" GridPane.rowIndex="1" fx:id="labalaPrezime">
+            <Label fx:id="labalaPrezime" text="Prezime" textAlignment="CENTER" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding></Label>
-            <Button mnemonicParsing="false" text="Promijeni Ime" GridPane.columnIndex="1" onAction="#onClick">
+            <Button mnemonicParsing="false" onAction="#onClick" text="Promijeni Ime" GridPane.columnIndex="1">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
                </padding>
