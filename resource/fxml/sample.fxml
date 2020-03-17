@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rs.tutorijal2.Controller">
+   <center>
+      <GridPane alignment="center" hgap="10" vgap="10">
+         <children>
+            <Label contentDisplay="CENTER" text="Ime" textAlignment="CENTER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <Label text="Prezime" textAlignment="CENTER" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <Button mnemonicParsing="false" text="Promijeni Ime" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </GridPane.margin></Button>
+         </children>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+         </columnConstraints></GridPane>
+   </center>
+</BorderPane>
